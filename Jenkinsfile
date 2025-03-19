@@ -2,17 +2,19 @@ pipeline {
     agent any
 
     stages {
+
         stage('Build') {
             steps {
                 echo 'Compiling the C++ source code...'
-                sh 'g++ -o PES1UG22CS392-1 PES1UG22CS392.cpp'
+                build 'PES1UG22CS392-1'
+                sh 'g++ PES1UG22CS392.cpp -o output'
             }
         }
 
         stage('Test') {
             steps {
                 echo 'Running the compiled application...'
-                sh './PES1UG22CS392-1' 
+                sh './output' 
             }
         }
 
