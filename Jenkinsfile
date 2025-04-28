@@ -7,7 +7,7 @@ pipeline {
             steps {
                 echo 'Compiling the C++ source code...'
                 build 'PES1UG22CS401-1'
-                sh 'g++ PES1UG22CS401.cpp -o output'
+                sh 'g++ file.cpp -o output'
             }
         }
 
