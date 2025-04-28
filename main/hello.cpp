@@ -7,6 +7,8 @@ int main(void) {
   cout << "Hello, Jenkins\n";
   cout << "Hello PES1UG22CS401\n";
   cout << "Hello Nitika Melayil\n";
+  cout << "Hello NM";
   cout << "I have successfully built and run this  \n";
   return 0;
 }
+You are inspired just say ho
